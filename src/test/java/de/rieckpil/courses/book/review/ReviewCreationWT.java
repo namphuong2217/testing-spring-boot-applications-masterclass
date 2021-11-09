@@ -53,7 +53,6 @@ class ReviewCreationWT extends AbstractWebTest {
 
   @Container
   static BrowserWebDriverContainer<?> webDriverContainer = new BrowserWebDriverContainer<>()
-    .withRecordingMode(BrowserWebDriverContainer.VncRecordingMode.RECORD_ALL, new File("./target"))
     .withCapabilities(CHROME_OPTIONS);
 
   private static final String ISBN = "9780321751041";
